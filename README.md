@@ -12,7 +12,7 @@ This project is made using Foundry. Therefore, make sure you have it installed:
 
 You will also need the Circom compiler. Follow the [Circom guide](https://docs.circom.io/getting-started/installation/) to install it, as you'll need to build the compiler from source, and also install the additional packages for generating proofs.
 
-## Testing out the Milady ZK Swap
+## Testing out Milady ZK Swap
 
 Run `forge t -vvvv` to run the test. This deploys a milady mock token, ZK Verifier contract and the swapper itself to foundry's in-memory test runner, and runs an example exchange. Due to `-vvvv` you'll be able to see the traces and how the verifier contract works in terms of low level calls.
 
