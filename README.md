@@ -4,7 +4,7 @@ A silly escrow swap example contract which verifies a proof before a swap can be
 
 THIS CODE HAS NOT BEEN AUDITED AND SHOULD NOT BE USED IN PRODUCTION. USE AT YOUR OWN RISK.
 
-## Setup and Usage
+## Setup
 
 This project is made using Foundry. Therefore, make sure you have it installed:
 
@@ -12,7 +12,11 @@ This project is made using Foundry. Therefore, make sure you have it installed:
 
 You will also need the Circom compiler. Follow the [Circom guide](https://docs.circom.io/getting-started/installation/) to install it, as you'll need to build the compiler from source, and also install the additional packages for generating proofs.
 
-Once this is done, we can begin generating the proof!
+## Testing out the Milady ZK Swap
+
+Run `forge t -vvvv` to run the test. This deploys a milady mock token, ZK Verifier contract and the swapper itself to foundry's in-memory test runner, and runs an example exchange. Due to `-vvvv` you'll be able to see the traces and how the verifier contract works in terms of low level calls.
+
+Here are the instructions for generating all the Circom-related files from scratch:
 
 ### Generating the proof
 
